@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  developer_name: MyString
+  location: MyString
+  total_capital_needed: 1
+  minimum_investment: 1
+  projected_roi: 1
+
+two:
+  developer_name: MyString
+  location: MyString
+  total_capital_needed: 1
+  minimum_investment: 1
+  projected_roi: 1
