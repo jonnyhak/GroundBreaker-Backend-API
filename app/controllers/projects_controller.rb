@@ -28,6 +28,6 @@ class ProjectsController < ApplicationController
     private
 
     def project_params
-        params.require(:player).permit(:developer_name, :location, :total_capital_needed, :minimum_investment, :projected_roi)
+        params.require(:project).permit(:developer_name, :location, :total_capital_needed, :minimum_investment, :projected_roi)
     end
 end
