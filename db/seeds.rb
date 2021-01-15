@@ -19,6 +19,6 @@ project2 = Project.create(developer_name: "project2", location: "Midtown", total
 project3 = Project.create(developer_name: "project3", location: "Harlem", total_capital_needed: 36000, minimum_investment: 3000, projected_roi: 0.073)
 
 investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
-investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
-investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
-investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
+# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
+# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
+# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
