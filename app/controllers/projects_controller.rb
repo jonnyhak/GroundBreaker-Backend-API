@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
     def index
-        @projects = Project.all
-        render json: @projects, include: :investments
+        @projects = Project.all.includes(:investments)
+        render json: @projects, :include => :investments, except: [:created_at, :updated_at]
     end
 
     def show
