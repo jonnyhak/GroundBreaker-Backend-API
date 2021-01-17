@@ -1,12 +1,12 @@
 class InvestmentsController < ApplicationController
     def index
         @investments = Investment.all
-        render json: @investments
+        render json: @investments, include: :user
     end
 
     def show
         @investment = Investment.find(params[:id])
-        render json: @investment
+        render json: @investment, include: :user
     end
 
     def new
@@ -23,6 +23,12 @@ class InvestmentsController < ApplicationController
         @investment = Investment.find(params[:id])
         @investment.update(investment_params)
         render json: @investment
+    end
+
+    def destroy 
+        @investment = Investment.find(params[:id])
+        @investment.destroy
+        
     end
 
     private
