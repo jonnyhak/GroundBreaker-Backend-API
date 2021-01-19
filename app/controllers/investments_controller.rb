@@ -16,13 +16,13 @@ class InvestmentsController < ApplicationController
 
     def create
         @investment = Investment.create(investment_params)
-        render json: @investment
+        render json: @investment, include: :user
     end
 
     def update
         @investment = Investment.find(params[:id])
         @investment.update(investment_params)
-        render json: @investment
+        render json: @investment, include: :user
     end
 
     def destroy 

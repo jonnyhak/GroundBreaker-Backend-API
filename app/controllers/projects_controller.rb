@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
 
     def show
         @project = Project.find(params[:id])
-        render json: @project, include: :investments
+        render json: @project, :include => {:investments => {include: :user}}
     end
 
     def new
