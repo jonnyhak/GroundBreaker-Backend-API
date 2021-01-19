@@ -1,6 +1,10 @@
 
 class UserSerializer < ActiveModel::Serializer 
-    # attributes :username, :password
+    
+    has_many :investments
+    has_many :projects, through: :investments 
+    
+    attributes :id, :username, :password
 
     # def projects 
     #     self.object.investments.map do |investment|
