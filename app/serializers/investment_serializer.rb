@@ -1,10 +1,10 @@
 
 class InvestmentSerializer < ActiveModel::Serializer 
 
-    belongs_to :user
-    belongs_to :project 
+    # belongs_to :user
+    # belongs_to :project 
 
-    attributes :id, :date, :amount, :user, :project 
+    # attributes :id, :date, :amount, :user, :project 
 
     # def user 
     #     {

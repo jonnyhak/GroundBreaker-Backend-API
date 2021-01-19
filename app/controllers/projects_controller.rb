@@ -1,7 +1,9 @@
 class ProjectsController < ApplicationController
     def index
-        @projects = Project.all.includes(:investments)
-        render json: @projects, :include => {:investment => :user}
+        @projects = Project.all
+        # @projects = Project.all.includes(:investments)
+        # render json: @projects, include: :investments
+        render json: @projects, :include => {:investments => {include: :user}}
     end
 
     def show
