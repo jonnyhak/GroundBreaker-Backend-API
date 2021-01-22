@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_14_155741) do
+ActiveRecord::Schema.define(version: 2021_01_21_202605) do
 
   create_table "investments", force: :cascade do |t|
     t.datetime "date"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2021_01_14_155741) do
     t.float "projected_roi"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "lat"
+    t.decimal "lng"
   end
 
   create_table "users", force: :cascade do |t|
