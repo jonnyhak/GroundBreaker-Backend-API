@@ -28,9 +28,11 @@ tc = Project.create(developer_name: "Trinity Commons", location: "74 Trinity Pla
 
 cf = Project.create(developer_name: "Caton Flats", location: "794 Flatbush Ave, Brooklyn", total_capital_needed: 17820000, minimum_investment: 267300, projected_roi: 0.059, lat: 40.653350, lng: -73.959831, size: 220000, img1: "https://ds2.cityrealty.com/img/b6e794b936a9f2cf51494ec6e342f963d663a5d7+w+h+0+60/caton-flats-794-flatbush-avenue-01.jpg", img2: "https://freeformdeform.com/wp-content/uploads/2014/12/Canton_Website.jpg")
 
-br = Project.create(developer_name: "Betances Residence", location: "445 East 142nd St, Bronx", total_capital_needed: 9720000, minimum_investment: 145800, projected_roi: 0.053, lat: 40.811166, lng: -73.919361, size: 120000, img1: "https://newyorkyimby.com/wp-content/uploads/2020/07/View-of-construction-at-Betances-_-445-East-142nd-Street-Breaking-Gound02.jpg", img2: "https://images.squarespace-cdn.com/content/v1/581a52665016e1193909b177/1517005772371-OF1LEROFX3Y6UJXCJRZW/ke17ZwdGBToddI8pDm48kHNrM01Txj7H96mhCvow6J17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZoG3gN5YzIm1LeJlW8KStLBDqV3C1BNRJ_FgRz2KPWN6z9MUY0yd2njC85rKH5I0g/16+-+Rendering+-+Site+1+-+Looking+South+-+Mathew.jpg")
+br = Project.create(developer_name: "Betances Residence", location: "445 East 142nd St, Bronx", total_capital_needed: 9720000, minimum_investment: 145800, projected_roi: 0.053, lat: 40.811166, lng: -73.919361, size: 120000, img2: "https://newyorkyimby.com/wp-content/uploads/2020/07/View-of-construction-at-Betances-_-445-East-142nd-Street-Breaking-Gound02.jpg", img1: "https://images.squarespace-cdn.com/content/v1/581a52665016e1193909b177/1517005772371-OF1LEROFX3Y6UJXCJRZW/ke17ZwdGBToddI8pDm48kHNrM01Txj7H96mhCvow6J17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZoG3gN5YzIm1LeJlW8KStLBDqV3C1BNRJ_FgRz2KPWN6z9MUY0yd2njC85rKH5I0g/16+-+Rendering+-+Site+1+-+Looking+South+-+Mathew.jpg")
 
 ep = Project.create(developer_name: "Edwin's Place", location: "7 Livonia Ave, Brooklyn", total_capital_needed: 9396000, minimum_investment: 195000, projected_roi: 0.058, lat: 40.662294, lng: -73.917956, size: 116000, img1: "https://ds4.cityrealty.com/img/5ec10e28513823deede59ba0d2a54c2643c456ac+w+h+0+60/edwins-place-7-livonia-avenue-01.jpg", img2: "https://bklyner.s3.us-east-1.amazonaws.com/bklyner/wp-content/uploads/2020/05/Screen-Shot-2020-05-29-at-4.29.50-PM.png")
+
+ja = Project.create(developer_name: "Jackson Avenue", location: "26-04 Jackson Avenue, Queens", total_capital_needed: 4715982, minimum_investment: 70700, projected_roi: 0.051, lat: 40.746656, lng: -73.942074, size: 58222, img1: "https://res.feednews.com/assets/v2/5153a8e7e40dc3018a03335549d46988?width=1280&height=720&quality=hq&category=us_Economy&Finance", img2: "https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F181107112022-long-island-city-restricted.jpg")
 
 
 
@@ -40,6 +42,6 @@ ep = Project.create(developer_name: "Edwin's Place", location: "7 Livonia Ave, B
 # investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: cp)
 # investment2 = Investment.create(date: Date.today, amount: 2400, user: jonnyhak, project: hs)
 
-# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
-# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
-# investment1 = Investment.create(date: Date.today, amount: 3300, user: jonnyhak, project: project3)
+30.times do 
+    Investment.create(date: Date.today-rand(100), amount: rand(2000000..3500000), user: User.all.sample, project: Project.all.sample)
+end
