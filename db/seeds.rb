@@ -79,6 +79,10 @@ md = Project.create(developer_name: "Minrav Development’s VU", location: "368 
 10.times do 
     Investment.create(date: Date.today-rand(100), amount: rand(176176..1500000), user: User.all.sample, project: md)
 end
+go = Project.create(developer_name: "Gotham Organization", location: "55 Suffolk Street, Manhattan", total_capital_needed: 31565700, minimum_investment: 473485, projected_roi: 0.072, lat: 40.716359, lng: -73.987254, size: 389790, img1: "https://commercialobserver.com/wp-content/uploads/sites/3/2020/12/Suffolk_FINAL.jpg?quality=80", img2: "https://newyorkyimby.com/wp-content/uploads/2020/05/1713-BSD-Suffolk-Over-All-Rendering-Nov-2019.jpg")
+15.times do 
+    Investment.create(date: Date.today-rand(100), amount: rand(473485..1500000), user: User.all.sample, project: go)
+end
 
 
 # project2 = Project.create(developer_name: "project2", location: "Columbus Circle, NYC", total_capital_needed: 180000, minimum_investment: 1500, projected_roi: 0.043, lat: 40.768082, lng: -73.981915)
