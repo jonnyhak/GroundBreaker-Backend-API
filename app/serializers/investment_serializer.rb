@@ -1,5 +1,5 @@
 
-class InvestmentSerializer < ActiveModel::Serializer 
+# class InvestmentSerializer < ActiveModel::Serializers 
 
     # belongs_to :user
     # belongs_to :project 
@@ -27,4 +27,4 @@ class InvestmentSerializer < ActiveModel::Serializer
 
     # end
 
-end
+# end
