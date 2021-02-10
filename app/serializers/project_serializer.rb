@@ -1,5 +1,5 @@
 
-class ProjectSerializer < ActiveModel::Serializer 
+class ProjectSerializer < ActiveModel::Serializers 
     # attributes :id, :developer_name, :location, :total_capital_needed, :minimum_investment, :projected_roi
     
     # has_many :investments
