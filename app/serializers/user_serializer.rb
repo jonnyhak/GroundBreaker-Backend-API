@@ -1,5 +1,5 @@
 
-class UserSerializer < ActiveModel::Serializers 
+class UserSerializer < ActiveModel::Serializer
     
     # has_many :investments
     # has_many :projects, through: :investments 
