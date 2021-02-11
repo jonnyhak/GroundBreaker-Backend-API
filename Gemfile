@@ -47,4 +47,4 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'rest-client'
 
-gem "active_model_serializers"
+# gem "active_model_serializers"
